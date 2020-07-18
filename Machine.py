@@ -8,4 +8,4 @@ class Machine:
 
     def print_interface_list(self):
         for interface_name in self.interfaces_names_list:
-            print(interface_name)
+            print("seperated interface: \n" + interface_name)
