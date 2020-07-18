@@ -1,6 +1,6 @@
 import os
 import re
-
+import subprocess
 
 class NICOperations:
 
@@ -11,7 +11,6 @@ class NICOperations:
         :param command:
         :return: shell returned output
         """
-        os.system(command)
         return os.popen(command).read()
 
     @staticmethod
