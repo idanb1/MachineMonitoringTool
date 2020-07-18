@@ -4,7 +4,9 @@ class Interface():
     notImplementedAbstractErr = "SubClass needs to implement this abstract mathod"
 
     def __init__(self):
-        pass
+        self.name = self.get_interface_name()
+        self.ip = self.get_ip_address()
+        self.mac = self.get_mac_address()
 
     def get_interface_name(self):
         raise NotImplementedError(Interface.notImplementedAbstractErr)

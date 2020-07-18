@@ -7,7 +7,7 @@ class PhysicalInterface(Interface):
         super(Interface, self).__init__()
 
     def get_interface_name(self):
-        command_outpud = NICOperations.set_command('ifconfig | grep ".*: "')
+        pass
 
     def get_ip_address(self):
         pass
